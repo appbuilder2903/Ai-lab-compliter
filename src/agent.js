@@ -122,7 +122,7 @@ async function askModelForAction(client, goal, step, pageState, history) {
   return parseAction(outputText);
 }
 
-async function executeAction(page, action) {
+export async function executeAction(page, action) {
   switch (action.type) {
     case "goto":
       await page.goto(action.url, { waitUntil: "domcontentloaded", timeout: 90_000 });
