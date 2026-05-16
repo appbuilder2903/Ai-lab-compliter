@@ -1,0 +1,20 @@
+{
+  "name": "ai-lab-compliter",
+  "version": "1.0.0",
+  "description": "AI-powered computer-use agent scaffold for cloud lab automation",
+  "type": "module",
+  "main": "src/agent.js",
+  "scripts": {
+    "start": "node src/agent.js",
+    "test": "node --test",
+    "check": "node --check src/agent.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "openai": "^6.37.0",
+    "playwright": "^1.60.0"
+  }
+}
